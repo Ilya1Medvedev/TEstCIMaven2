@@ -27,7 +27,6 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Build and test project
-        working-directory: github-actions-java-maven
         run: mvn -B verify
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v2
